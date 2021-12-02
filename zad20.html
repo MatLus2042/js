@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 20</title>
+
+    <script language="JavaScript">
+        function pole_lustyk(a_lus, b_lus, h_lus) {
+            a = parseFloat(a_lus)
+            b = parseFloat(b_lus)
+            h = parseFloat(h_lus)
+
+            V_wynik = (a + b) * h / 2
+            document.getElementsByName('pole')[0].value = V_wynik; /* na dokument */
+            pokaz1.innerHTML = "Pole=" + V_wynik;  /* do tabeli */
+        }
+        function obw_lustyk(a_lus2, b_lus2, h_lus2) {
+            a2 = parseFloat(a_lus2)
+            b2 = parseFloat(b_lus2)
+            h2 = parseFloat(h_lus2)
+            Pc_wynik = a2 + b2 + 2 * (Math.sqrt(Math.pow((a2 - b2) / 2, 2) + Math.pow(h2, 2)))
+            document.getElementsByName('obw')[0].value = Pc_wynik;
+            pokaz2.innerHTML = "Obwód=" + Pc_wynik + "";
+        }
+    </script>
+</head>
+
+<body>
+    Obliczanie pola i obwodu trapezu
+    <br> <br>
+    <form name="formularz" action="..." onsubmit="pole_lustyk(this.podstawa.value,this.podstawa2.value,this.wysokosc.value); 
+    obw_lustyk(this.podstawa.value,this.podstawa2.value,this.wysokosc.value);return false">
+        Podaj a=
+        <input size="6" name="podstawa">
+        Podaj b=
+        <input size="6" name="podstawa2">
+        Podaj h=
+        <input size="6" name="wysokosc">
+        <br>
+        <br>
+        <input TYPE="submit" Value="oblicz">
+        <br>
+        <br>
+        P
+        <input size="6" name="pole">
+        Obw
+        <input size="6" name="obw">
+    </form>
+    <table>
+        <tr id="pokaz1"></tr>
+        <tr id="pokaz2"></tr>
+    </table>
+</body>
+
+</html>

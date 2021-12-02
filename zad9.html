@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 9</title>
+</head>
+
+<body>
+    <div style="color:greenyellow;font-size:45px;">
+        <script language="JavaScript">
+            var D1_lus = prompt("pierwszy dzien =", "");
+            var D2_lus = prompt("drugi dzien =", "");
+            var G1_lus = prompt("pierwsza godzina =", "");
+            var G2_lus = prompt("druga godzina =", "");
+            var suma;
+            var a = parseFloat(D1_lus);
+            var b = parseFloat(D2_lus);
+            var c = parseFloat(G1_lus);
+            var d = parseFloat(G2_lus);
+            suma = b - a;
+            var wynik;
+            wynik = suma * 86400;
+            document.write("Miedzy " + a + " a " + b + " minelo " + wynik + " sekund <br>");
+            var suma2;
+            suma2 = d - c;
+            var wynik2;
+            wynik2 = suma * 3600;
+            document.write("Miedzy " + c + " a " + d + " minelo " + wynik2 + " sekund <br>");
+        </script>
+    </div>
+</body>
+
+</html>

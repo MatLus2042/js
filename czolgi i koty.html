@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czolgi</title>
+    <script type="text/javascript">
+        function czolgi(nazwa, wysokosc, dlugosc, szerokosc, waga, kraj, vmax, crew) {
+            this.nazwa = nazwa;
+            this.wysokosc = wysokosc;
+            this.dlugosc = dlugosc;
+            this.szerokosc = szerokosc;
+            this.waga = waga;
+            this.kraj = kraj;
+            this.vmax = vmax;
+            this.crew = crew;
+        }
+
+        function koty(rasa, wzrost, masa, lifespan, siersc, EMS) {
+            this.rasa = rasa;
+            this.wzrost = wzrost;
+            this.masa = masa;
+            this.lifespan = lifespan;
+            this.siersc = siersc;
+            this.EMS = EMS;
+        }
+        C1 = new koty("Kot Brytyjski krótkowłosy", "30-35cm", "4-9kg", "15-18 lat", "krotkie i geste", "BSH");
+        C2 = new koty("Maine Coon", "25-41cm", "6-11kg", "14-18 lat", "srednie i geste", "MCO");
+        C3 = new koty("Kot perski", "30-35cm", "2.5-7kg", "10-17 lat", "dluga", "PER");
+        C4 = new koty("Kot rosyjski niebieski", "30cm", "2-3kg", "13-20 lat", "krotka i gesta", "RUS");
+        C5 = new koty("Ragdoll", "30-40cm", "6-10kg", "15-18 lat", "srednia i gesta", "RAG");
+        C6 = new koty("Kot Syjamski", "30cm", "3.5-4.5kg", "15-20lat", "krotka i sprezysta", "SIA");
+
+
+        document.write("" + C5.rasa + " wzrost: " + C5.wzrost + "masa:" + C5.masa + "dlugosc zycia: " + C5.lifespan + "siersc: " + C5.siersc + "Numer EMS: " + C5.EMS + "jest walascicielem czolgu: ")
+
+        T1 = new czolgi("M1A5 Abramas", "2.44m", "9.77m", "3,7m", "64.4t", "USA", "80km/h", "4 osoby");
+        T2 = new czolgi("T14 Armata", "3.3m", "8.7m", "3,5m", "55t", "Rosja", "80-90km/h", "3 osoby");
+        T3 = new czolgi("Tiger I", "2,93m", "8.45m", "3.7m", "57t", "III Rzesza", "38km/h", "5 osób");
+        T4 = new czolgi("M4 Sherman", "2.94", "6.2m", "2.62m", "31,5t", "USA", "39km/h", "5 osób");
+        T5 = new czolgi("Leopard 2A7", "2.48m", "9.67m", "3.54m", "55t", "Niemcy", "72km/h", "4 osoby");
+        T6 = new czolgi("Challenger 2", "2.49m", "11.55m", "3.52m", "62.5m", "Wielka Brytania", "56km/h", "4 osoby");
+
+        document.write("nazwa: " + T1.nazwa + ", wysokosc: " + T1.wysokosc + ", dlugosc: " + T1.dlugosc + ", szerokosc: " + T1.szerokosc + ", waga: " + T1.waga + ", kraj: " + T1.kraj + ", predkosc maksymalna: " + T1.vmax + ", zaloga: " + T1.crew + "<br>");
+        document.write("<br>")
+
+        document.write("nazwa: " + T2.nazwa + ", wysokosc: " + T2.wysokosc + ", dlugosc: " + T2.dlugosc + ", szerokosc: " + T2.szerokosc + ", waga: " + T2.waga + ", kraj: " + T2.kraj + ", predkosc maksymalna: " + T2.vmax + ", zaloga: " + T2.crew + "<br>");
+
+        document.write("nazwa: " + T3.nazwa + ", wysokosc: " + T3.wysokosc + ", dlugosc: " + T3.dlugosc + ", szerokosc: " + T3.szerokosc + ", waga: " + T3.waga + ", kraj: " + T3.kraj + ", predkosc maksymalna: " + T3.vmax + ", zaloga: " + T3.crew + "<br>");
+
+        document.write("nazwa: " + T4.nazwa + ", wysokosc: " + T4.wysokosc + ", dlugosc: " + T4.dlugosc + ", szerokosc: " + T4.szerokosc + ", waga: " + T4.waga + ", kraj: " + T4.kraj + ", predkosc maksymalna: " + T4.vmax + ", zaloga: " + T4.crew + "<br>");
+
+        document.write("nazwa: " + T5.nazwa + ", wysokosc: " + T5.wysokosc + ", dlugosc: " + T5.dlugosc + ", szerokosc: " + T5.szerokosc + ", waga: " + T5.waga + ", kraj: " + T5.kraj + ", predkosc maksymalna: " + T5.vmax + ", zaloga: " + T5.crew + "<br>");
+
+        document.write("nazwa: " + T6.nazwa + ", wysokosc: " + T6.wysokosc + ", dlugosc: " + T6.dlugosc + ", szerokosc: " + T6.szerokosc + ", waga: " + T6.waga + ", kraj: " + T6.kraj + ", predkosc maksymalna: " + T6.vmax + ", zaloga: " + T6.crew + "<br>");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
